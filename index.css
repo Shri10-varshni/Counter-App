@@ -1,0 +1,92 @@
+body {
+    background-color: #FFD0D0;
+    margin: auto;
+    color: rgb(28, 27, 27);
+}
+
+
+h1 {
+    background-color: #56bbcd;
+    padding: 20px 30%;
+    border-radius: 2px;
+    margin: 0;
+    box-shadow: 0 0 10px 2px #1b1b1b21;
+}
+
+button {
+    padding: 10px 10%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 5px 5px 8px #1b1b1b21;
+    align-items: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    color: rgb(28, 27, 27);
+    text-decoration: none;
+}
+.big-container {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fe8492;
+    box-shadow: 0px 5px 8px #1b1b1b21;
+}
+
+
+.small-container {
+    background-color: #f1e5d3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px #1b1b1b21;
+    width: 600px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 1%;
+}
+
+.my-counter {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    padding: 20px 5%;
+}
+
+#dec-btn {
+    background-color: #FFA27F;
+}
+
+#dec-btn:hover {
+    background-color: #ef7e55;
+    transition-duration: 200ms;
+}
+
+#inc-btn {
+    background-color: #ACD793 ;
+}
+
+#inc-btn:hover {
+    background-color: #97BE5A;
+    transition-duration: 200ms;
+}
+
+#save-btn{
+    background-color: #e78888;
+}
+
+#save-btn:hover {
+    background-color: #d56464;
+    transition-duration: 200ms;
+}
+
