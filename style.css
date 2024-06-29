@@ -4,17 +4,17 @@ body {
     color: rgb(28, 27, 27);
 }
 
-
 h1 {
     background-color: #56bbcd;
-    padding: 20px 30%;
+    padding: 20px 10%;
     border-radius: 2px;
     margin: 0;
     box-shadow: 0 0 10px 2px #1b1b1b21;
+    font-size: 2rem;
 }
 
 button {
-    padding: 10px 10%;
+    padding: 8px 10%;
     border: none;
     border-radius: 3px;
     box-shadow: 5px 5px 8px #1b1b1b21;
@@ -29,31 +29,34 @@ a {
     color: rgb(28, 27, 27);
     text-decoration: none;
 }
+
 .big-container {
     padding: 50px;
     display: flex;
     justify-content: center;
 }
+
 .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #fe8492;
+    background-color: #fd9aa5;
     box-shadow: 0px 5px 8px #1b1b1b21;
 }
-
 
 .small-container {
     background-color: #f1e5d3;
     border-radius: 5px;
     box-shadow: 0 0 10px 2px #1b1b1b21;
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 30px 1%;
+    padding: 30px 6%;
+    overflow: hidden;
 }
 
 .my-counter {
@@ -61,6 +64,11 @@ a {
     width: 70%;
     justify-content: space-around;
     padding: 20px 5%;
+    overflow: hidden;
+}
+
+#my-count {
+    padding: 5px;
 }
 
 #dec-btn {
@@ -90,3 +98,22 @@ a {
     transition-duration: 200ms;
 }
 
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem; 
+        padding: 10px 5%; 
+    }
+
+    .small-container {
+        width: 95%;
+    }
+
+    .my-counter {
+        width: 90%;
+    }
+
+    #dec-btn, #inc-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
